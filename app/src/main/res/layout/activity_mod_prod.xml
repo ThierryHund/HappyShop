@@ -1,0 +1,102 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="${packageName}.${activityClass}"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="#eee"
+        android:padding="25dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/titleModProd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:textColor="#FF1E5524"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:text="@string/add_product" />
+
+        <TextView
+            android:id="@+id/labelProdName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/product_name"
+            />
+
+        <EditText
+            android:id="@+id/prodName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:hint="@string/product_name"
+            android:inputType="textCapSentences" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/labelProdCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="@string/product_category"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerCateg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10" >
+        </Spinner>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp" >
+
+            <Button
+                android:id="@+id/cancelAddProd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:minHeight="6dip"
+                android:minWidth="10dip"
+                android:padding="10dp"
+                android:gravity="left"
+                android:text="@string/button_cancel"
+                android:textColor="#FFFFFF"
+                android:background="#000000" />
+
+
+            <Button
+                android:id="@+id/validModProd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cancelAddProd"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:minHeight="6dip"
+                android:minWidth="10dip"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:gravity="right"
+                android:text="@string/button_ok"
+                android:textColor="#FFFFFF"
+                android:background="#000000" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,119 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="${packageName}.${activityClass}"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="#eee"
+        android:padding="25dp"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/titleModCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:textColor="#FF1E5524"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:text="@string/add_categ" />
+
+        <TextView
+            android:id="@+id/labelCatName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/category_name"
+            />
+
+        <EditText
+            android:id="@+id/catName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:hint="@string/category_name"
+            android:inputType="textCapSentences" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/labelCatColor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:text="@string/category_color"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="@string/category_color"
+            android:ems="10" >
+        </Spinner>
+
+        <TextView
+            android:id="@+id/labelAutoComp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text="@string/category_order"
+            />
+
+        <NumberPicker
+            android:id="@+id/catOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp" >
+
+            <Button
+                android:id="@+id/cancelAddCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:minHeight="6dip"
+                android:minWidth="10dip"
+                android:padding="10dp"
+                android:gravity="left"
+                android:text="@string/button_cancel"
+                android:textColor="#FFFFFF"
+                android:background="#000000" />
+
+
+            <Button
+                android:id="@+id/validModCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cancelAddCat"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:minHeight="6dip"
+                android:minWidth="10dip"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:gravity="right"
+                android:text="@string/button_ok"
+                android:textColor="#FFFFFF"
+                android:background="#000000" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

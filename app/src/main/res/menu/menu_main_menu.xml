@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.iutlpweb.fr.happyshop.views.MainMenuActivity"
+    android:id="@+id/menu">
+
+    <item
+        android:id="@+id/home"
+        android:title="@string/app_name"
+        android:icon="@drawable/grocery_cart"
+        app:showAsAction="ifRoom"
+        />
+
+    <item
+        android:id="@+id/createCateg"
+        android:title="@string/add_categ"
+        android:orderInCategory="100" app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/listCateg"
+        android:title="@string/list_categories"
+        android:orderInCategory="100" app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/createProd"
+        android:title="@string/add_prod"
+        android:orderInCategory="100" app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/listProd"
+        android:title="@string/list_products"
+        android:orderInCategory="100" app:showAsAction="never"/>
+</menu>

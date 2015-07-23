@@ -1,0 +1,47 @@
+<resources>
+
+    <string name="app_name">HappyShop</string>
+    <string name="hello_world">yoooooooooo</string>
+    <string name="action_settings">settings</string>
+
+    <!-- Menu options names -->
+    <string name="add_categ">Ajouter catégorie</string>
+    <string name="list_categories">Liste Catégories</string>
+    <string name="add_prod">Ajouter produit</string>
+    <string name="list_products">Liste Produits</string>
+
+    <!-- Activities names -->
+    <string name="title_activity_mod_prod">ModProdActivity</string>
+    <string name="title_activity_mod_cat">Ajout catégorie</string>
+    <string name="title_activity_list_prod">Liste produits</string>
+    <string name="title_activity_list_cat">Liste catégories</string>
+
+    <!-- Homepage activity -->
+    <string name="product_name">Nom produit</string>
+    <string name="list_shopping">Liste de courses</string>
+
+    <!-- Add/Mod activities -->
+    <string name="button_ok">Valider</string>
+    <string name="button_cancel">Annuler</string>
+    <string name="category_name">Nom catégorie</string>
+    <string name="category_color">Couleur catégorie</string>
+    <string name="product_category">Catégorie du produit</string>
+    <string name="category_order">Ordre catégorie</string>
+    <string name="add_product">Ajouter un produit</string>
+    <string name="add">Ajouter</string>
+    <string name="title_main">Ma liste de course</string>
+
+    <string-array name="colors">
+        <item>Rouge</item>
+        <item>Bleu</item>
+        <item>Vert</item>
+        <item>Orange</item>
+        <item>Jaune</item>
+        <item>Beige</item>
+        <item>Marron</item>
+        <item>Rose</item>
+        <item>Violet</item>
+        <item>Tomate</item>
+    </string-array>
+
+</resources>
